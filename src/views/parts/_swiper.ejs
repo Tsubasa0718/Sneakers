@@ -1,0 +1,11 @@
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <% pickupData.forEach(slide =>{ %>
+      <div class="swiper-slide"><img width="407" height="272" src="../img/<%= slide.image %>" alt="<%= slide.alt %>"></div>
+    <% }) %>
+  </div>
+
+</div>

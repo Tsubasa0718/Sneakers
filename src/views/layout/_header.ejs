@@ -1,0 +1,41 @@
+<header class="header">
+    <div class="header__body">
+        <div class="header__wrapper">
+            <!-- logo -->
+            <h1 class="header__logo">
+                <a href="">
+                    <img width="175" height="40" src="../img/logo.svg" alt="Sneakers">
+                </a>
+            </h1>
+            <!-- nav -->
+            <nav id="is-nav" class="nav" aria-hidden="true">
+                <ul class="nav__list">
+                    <% navData.forEach(item=>{ %>
+                     <li class="nav__item"><a class="nav__link" href="<%= item.link %>"><%= item.title %></a></li>
+                   <% }) %>
+                </ul>
+                <!-- sns -->
+                 <ul class="nav__sns-list">
+                    <% snsData.forEach(item=>{ %>
+                     <li class="nav__sns-item">
+                        <a class="nav__sns-link" href="<%= item.link %>"><%= item.title %></a>
+                     </li>
+                   <% }) %>
+                 </ul>
+            </nav>
+          <!-- hamburger-menu -->
+           <button
+            type="button"
+            class="hamburger-menu"
+            id="hamburger-menu"
+            aria-controls="is-nav"
+            aria-expanded="false"
+            >
+            <span class="hamburger-menu__line"></span>
+            <span class="hamburger-menu__line"></span>
+            <span class="hamburger-menu__line"></span>
+        </button>
+        </div>
+    </div>
+    <div id="mask" class="mask"></div>
+</header>

@@ -1,0 +1,18 @@
+<div class="card-body">
+    <div class="card-wrapper">
+       <% featureData.forEach(card=>{ %>
+         <div class="card">
+            <figure class="card__image fadeIn">
+                <img width="385" height="257" src="../img/<%= card.image %>" alt="<%= card.alt %>">
+            </figure>
+            <div class="card__desc">
+                <span class="card__label">category</span>
+                <div class="card__text-body">
+                    <p class="card__text"><%= card.text %></p>
+                </div>
+                <span class="card__time">XXXX.XX.XX</span>
+            </div>
+         </div>
+      <% }) %>
+    </div>
+</div>

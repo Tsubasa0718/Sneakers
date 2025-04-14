@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="人気のスニーカーを特集し、最新のデザインやトレンドをわかりやすく紹介。ピックアップされた注目のモデルと詳細な特徴をチェックできるほか、気軽にお問い合わせも可能。シンプルで洗練されたレイアウトで、ファッション好きのためのスニーカー情報をお届けします。">
+    <meta name="robots" content="noindex , nofollow">
+    <!-- OGP -->
+    <meta property="og:title" content="Sneakers">
+    <meta property="og:description" content="人気のスニーカーを特集し、最新のデザインやトレンドをわかりやすく紹介。ピックアップされた注目のモデルと詳細な特徴をチェックできるほか、気軽にお問い合わせも可能。シンプルで洗練されたレイアウトで、ファッション好きのためのスニーカー情報をお届けします。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sneakers-trend.netlify.app/">
+    <meta property="og:image" content="https://sneakers-trend.netlify.app/img/OGP.png">
+    <!-- Google-fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <title>Sneakers</title>
+</head>
+<body>
+  <%- include('./layout/_header.ejs') %>
+  <main class="main">
+  <%- include('./section/_mv.ejs') %>
+  <%- include('./section/_pickup.ejs') %>
+  <%- include('./section/_feature.ejs') %>
+  <%- include('./section/_contact.ejs') %>
+ </main>
+  <%- include('./layout/_footer.ejs') %>
+</body>
+</html>

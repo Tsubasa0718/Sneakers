@@ -1,0 +1,52 @@
+@use "../function/_mixin.scss" as *;
+
+.card-body{
+    margin-top: px-clamp(20,30,375,2000);
+}
+
+.card-wrapper{
+ display: grid;
+ grid-template-columns: repeat(1, 1fr);
+ row-gap: px-to-rem(26px);
+ @include responsive("phone"){
+  column-gap: px-to-rem(27px);
+  grid-template-columns: repeat(2, 1fr);
+ }
+ @include responsive("desktop"){
+  grid-template-columns: repeat(3, 1fr);
+ }
+}
+
+.card{
+    background-color: var(--base-color);
+    box-shadow: 0px 0px px-to-rem(8px) px-to-rem(4px) var(--DropShadow-color);
+
+
+   &__image{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+   }
+   &__desc{
+    padding: px-clamp(16,30,375,2000);
+   }
+   &__text-body{
+    margin: px-to-rem(20px) 0;
+   }
+   &__text{
+    font-size: px-to-rem(14.4px);
+   }
+   &__label,
+   &__time{
+    font-size: px-to-rem(12px);
+   }
+   &__time{
+    display: block;
+    text-align: right;
+   }
+
+}

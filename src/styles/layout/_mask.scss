@@ -1,0 +1,20 @@
+@use "../function/_mixin.scss" as *;
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: px-to-rem(800px);
+  background-color: var(--mask-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: opacity .3s;
+}
+
+// 状態変化
+.mask.is-active{
+  opacity: 1;
+  visibility: visible;
+}

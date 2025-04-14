@@ -1,0 +1,10 @@
+.fadeIn{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .5s;
+}
+
+.fadeIn.fade-in-active{
+ opacity: 1;
+ transform: none;
+}

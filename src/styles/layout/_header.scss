@@ -1,0 +1,19 @@
+@use "../function/_mixin.scss" as *;
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: var(--base-color);
+    height: px-to-rem(80px);
+  &__body{
+    padding: px-to-rem(20px) px-clamp(16,40,375,2000);
+  }
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

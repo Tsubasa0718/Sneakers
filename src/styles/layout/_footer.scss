@@ -1,0 +1,10 @@
+.footer{
+    background-color: var(--main-color);
+    &__copy-body{
+        padding: px-to-rem(10px) 0;
+        text-align: center;
+    }
+    &__copy{
+        color: var(--base-color);
+    }
+}

@@ -1,0 +1,5 @@
+@use "../function/_mixin.scss" as *;
+
+.feature{
+    margin-top: px-to-rem(100px);
+}

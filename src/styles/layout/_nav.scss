@@ -1,0 +1,46 @@
+@use "../function/_mixin.scss" as *;
+
+.nav{
+ position: fixed;
+ top: 0;
+ left: 0;
+ z-index: 3;
+ width: px-to-rem(300px);
+ height: px-to-rem(800px);
+ background-color: var(--main-color);
+ transform: translateX(-300px);
+ transition: transform .3s;
+ &__list{
+    padding: px-to-rem(60px) px-to-rem(25px) 0 px-to-rem(25px);
+ }
+ &__item{
+  padding: px-to-rem(20px) 0;
+  width: 100%;
+  border-top: px-to-rem(1px) solid var(--base-color);
+  border-bottom: px-to-rem(1px) solid var(--base-color);
+ }
+ &__item:not(:first-of-type){
+    border-bottom: px-to-rem(1px) solid var(--base-color);
+ }
+ &__link{
+    font-size: px-to-rem(14.4px);
+    color: var(--base-color);
+ }
+
+//  sns
+&__sns-list{
+  padding: px-to-rem(65px) 0 0 px-to-rem(25px);
+}
+&__sns-item:not(:first-of-type){
+  margin-top: px-to-rem(10px);
+}
+&__sns-link{
+    font-size: px-to-rem(14.4px);
+    color: var(--base-color);
+}
+}
+
+// 状態変化
+.nav.is-active{
+  transform: none;
+}

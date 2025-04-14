@@ -1,0 +1,14 @@
+@use "../function/_mixin.scss" as *;
+
+.contact{
+    margin-top: px-to-rem(90px);
+    padding: px-to-rem(80px) 0;
+    background-color: var(--main-color);
+  @include responsive("tablet"){
+    margin-top: px-to-rem(60px);
+    padding: px-to-rem(80px) 0;
+}
+  &__title{
+    color: var(--base-color);
+  }
+}

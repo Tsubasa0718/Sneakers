@@ -1,0 +1,7 @@
+@use "../function/_mixin.scss" as *;
+
+.container{
+    max-width: px-to-rem(1204px);
+    margin: 0 auto;
+    padding: 0 1rem;
+}

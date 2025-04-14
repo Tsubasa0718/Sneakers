@@ -1,0 +1,1 @@
+{"version":3,"file":"./css/style.css","mappings":";;;AAEA;EACI;AADJ,C","sources":["webpack://sneakers2/./src/styles/style.scss"],"sourcesContent":["@charset \"UTF-8\";\r\n\r\nh1{\r\n    color: aqua;\r\n}"],"names":[],"sourceRoot":""}

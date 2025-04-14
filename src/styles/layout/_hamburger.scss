@@ -1,0 +1,42 @@
+@use "../function/_mixin.scss" as *;
+
+.hamburger-menu{
+    position: relative;
+    z-index: 10;
+    width:  px-to-rem(40px);
+    height: px-to-rem(50px);
+}
+
+.hamburger-menu__line{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: px-to-rem(30px);
+    height: px-to-rem(2px);
+    background-color: var(--main-color);
+    transition: .3s;
+}
+
+.hamburger-menu__line:nth-child(1){
+  top: calc(50% - 8px);
+}
+.hamburger-menu__line:nth-child(3){
+  top: calc(50% + 8px);
+}
+
+// 状態変化
+.hamburger-menu.is-active > .hamburger-menu__line{
+    background-color: var(--base-color);
+}
+.hamburger-menu.is-active > .hamburger-menu__line:nth-last-child(1){
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(-315deg);
+}
+.hamburger-menu.is-active > .hamburger-menu__line:nth-last-child(2){
+  opacity: 0;
+}
+.hamburger-menu.is-active > .hamburger-menu__line:nth-last-child(3){
+    top: 50%;
+    transform: translate(-50%,-50%) rotate(315deg);
+}

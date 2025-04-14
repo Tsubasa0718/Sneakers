@@ -1,0 +1,64 @@
+@use "../function/_mixin.scss" as *;
+
+.form-body{
+    margin-top: px-clamp(20,30,375,2000);
+}
+.form-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  @include responsive("tablet"){
+  flex-direction: row-reverse;
+   justify-content: space-between;
+  }
+}
+
+.form{
+    margin-top: px-to-rem(30px);
+   @include responsive("tablet"){
+    margin-top: 0;
+    width: 50%;
+   }
+ &__item{
+   margin-bottom: px-to-rem(20px);
+ }
+ &__title{
+  color: var(--base-color);
+  font-size: px-to-rem(14.4px);
+  line-height: 1.7;
+ }
+}
+// テキストボックス
+input[type="text"],
+input[type="email"],
+textarea{
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background-color: var(--base-color);
+}
+input[type="text"],
+input[type="email"]{
+  height: px-to-rem(44px);
+}
+
+textarea{
+ height: px-to-rem(68px);
+}
+
+.form-message{
+  @include responsive("tablet"){
+    margin-right: px-to-rem(139px);
+    width: 50%;
+  }
+ &__text{
+    font-size: px-to-rem(14.4px);
+    line-height: 1.7;
+    color: var(--base-color);
+ }
+ &__text:not(:first-of-type){
+    margin-top: px-to-rem(30px);
+ }
+
+
+}
